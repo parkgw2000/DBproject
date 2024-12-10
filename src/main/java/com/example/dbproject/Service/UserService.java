@@ -11,21 +11,13 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    // 이메일로 사용자 찾기
-    public User findByUserEmail(String userEmail) {
-        return userRepository.findByUserEmail(userEmail)
-                .orElse(null);  // 값이 없으면 null 반환
+    // 이메일 사용자 조회
+    public User findByUserEmail(String email) {
+        return userRepository.findByUserEmail(email);
     }
 
-
-    // 닉네임으로 사용자 조회
-//    public User findUserByNickname(String nickname) {
-//        Optional<User> userOptional = userRepository.findByNickname(nickname);
-//        return userOptional.orElse(null);  // 값이 없으면 null 반환
-//    }
-    
-    // 사용자 저장
+    // 유저 백엔드 삽입
     public void saveUser(User user) {
-        userRepository.save(user);  // 사용자 정보 저장
+        userRepository.save(user);
     }
 }
