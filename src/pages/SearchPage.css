@@ -1,0 +1,137 @@
+/* 전체 페이지 컨테이너 */
+.search-page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    justify-content: center; /* 콘텐츠를 수직 중앙 정렬 */
+    align-items: center; /* 콘텐츠를 수평 중앙 정렬 */
+  }
+  
+  /* 서치바 스타일 */
+  .search-bar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  /* 메인 콘텐츠 영역 */
+  .main-content-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  /* 사이드바 스타일 */
+  .sidebar {
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+  
+  /* 검색 결과 출력 영역 */
+  .search-results-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* 수평 중앙 정렬 */
+    width: 100%; /* 가로 공간을 다 채움 */
+    max-width: 1200px; /* 최대 너비 설정 */
+    padding: 0 15px;
+  }
+  
+  /* 검색 결과 제목 */
+  .search-results-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* 제목을 중앙 정렬 */
+  }
+  
+  /* 검색 결과 카드 컨테이너 */
+  .search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center; /* 카드들을 중앙 정렬 */
+    width: 100%;
+    padding: 0 20px; /* 카드와 카드 간의 간격 */
+  }
+  
+  /* 카드 스타일 */
+  .search-results .recipe-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 100%; /* 카드가 가로로 꽉 차게 함 */
+    max-width: 300px; /* 카드 최대 너비 */
+    text-align: center; /* 카드 안 내용 중앙 정렬 */
+  }
+  
+  /* 카드 hover 스타일 */
+  .search-results .recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .recipe-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .recipe-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .recipe-card .category {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    .main-content-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .search-results {
+      grid-template-columns: 1fr; /* 모바일에서 카드 1개씩 나열 */
+    }
+  
+    .search-results .recipe-card {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  

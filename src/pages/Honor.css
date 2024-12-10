@@ -1,0 +1,9 @@
+/* 명예의 전당 제목 스타일 */
+.board-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a47a3; /* 제목 색상 */
+    margin-bottom: 20px;
+  }
+  

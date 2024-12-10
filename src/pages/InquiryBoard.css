@@ -1,0 +1,54 @@
+.inquiry-board-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .button-container {
+    text-align: right;
+    margin: 20px 0;
+  }
+  
+  .create-inquiry-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .create-inquiry-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .inquiry-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .inquiry-list th,
+  .inquiry-list td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .inquiry-list th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .inquiry-list tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .inquiry-list td:last-child {
+    color: #28a745;
+  }
+  
+  .inquiry-list td:last-child:not(:empty) {
+    font-weight: bold;
+  }

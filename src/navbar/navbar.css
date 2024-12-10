@@ -1,0 +1,78 @@
+/* 로고 스타일 */
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* 네비게이션 버튼 스타일 */
+  button {
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  /* 로그아웃 버튼 (위험 색상) */
+  button.btn-outline-danger {
+    color: #e74c3c;
+    border-color: #e74c3c;
+  }
+  
+  button.btn-outline-danger:hover {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  /* 로그인 버튼 (기본 파란색) */
+  button.btn-outline-primary {
+    color: #3498db;
+    border-color: #3498db;
+  }
+  
+  button.btn-outline-primary:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  /* 네브바 커스터마이징 */
+.navbar-custom {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* 네이비 그라데이션 */
+    color: white;
+    padding: 0.8rem 1rem;
+  }
+  
+  /* 로고 텍스트 */
+  .navbar-brand-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* 링크 텍스트 스타일 */
+  .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: white !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #f39c12 !important; /* 호버 시 오렌지 색상 */
+  }
+  
+  /* 유저 프로필 이미지 */
+  img.rounded-circle {
+    border: 2px solid white;
+    transition: border-color 0.3s ease;
+  }
+  
+  img.rounded-circle:hover {
+    border-color: #f39c12;
+  }
+  

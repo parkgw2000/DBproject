@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #4a47a3;
+  --secondary-color: #f0f0f0;
+  --text-color: #333;
+  --border-color: #ddd;
+  --hover-color: #5d54c4;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.search-wrapper:focus-within {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.search-classification {
+  padding: 10px 15px;
+  border: none;
+  background-color: #ffffff;  /* 기본 배경색 설정 (초록색 삭제) */
+  color: var(--text-color);
+  font-size: 0.9rem;
+  border-right: 1px solid var(--border-color);
+  outline: none;
+  cursor: pointer;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: none;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.search-button {
+  background-color: transparent; /* 배경색 삭제 */
+  color: var(--primary-color); /* 텍스트 색상을 기본 보라색으로 설정 */
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--primary-color); /* 아이콘 색상도 보라색으로 설정 */
+}
+
+.search-button:hover {
+  background-color: transparent; /* hover 시 배경색도 삭제 */
+}
+
+@media (max-width: 600px) {
+  .search-wrapper {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .search-classification {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .search-input-wrapper {
+    width: 100%;
+  }
+}
